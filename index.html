@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="google-signin-client_id" content="41735083566-381nsgngfvabgdvgjh0pk93h0c6jl8f2.apps.googleusercontent.com.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <title>Movie App - Josh Davila - Full Stack</title>
+        <link rel="stylesheet" href="style.css" />
+        <script type="module" src="scripts.js"></script>
+        <script type="module" src="index.js"></script>
+    </head>  
+    <body>  
+        <header>
+            <nav class="navbar navbar-light bg-light static-top"></nav>
+                <div class="container">
+                    <a onClick="window.location.reload();" class="btn btn-primary">Home</a>
+                    <a class="btn btn-primary">Watchlist</a>
+                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            </div>
+            </nav>
+            <form id="form">
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search"
+                    class="search"
+                />
+            </form>
+        </header>
+        <main id="main"></main>
+    </body>
+</html>
